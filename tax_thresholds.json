@@ -1,76 +1,63 @@
 {
-    "2026": {
-        "source": "CRA & Ontario Ministry of Finance Indexation Bulletins for 2026",
-        "federal": {
-            "brackets": [
-                58523.0,
-                117045.0,
-                181440.0,
-                258482.0
-            ],
-            "rates": [
-                0.14,
-                0.205,
-                0.26,
-                0.29,
-                0.33
-            ],
-            "bpa": 16452.0,
-            "bpa_rate": 0.14
-        },
-        "provincial": {
-            "brackets": [
-                53891.0,
-                107785.0,
-                150000.0,
-                220000.0
-            ],
-            "rates": [
-                0.0505,
-                0.0915,
-                0.1116,
-                0.1216,
-                0.1316
-            ],
-            "bpa": 12989.0,
-            "bpa_rate": 0.0505
-        }
-    },
-    "2025": {
-        "source": "CRA & Ontario Ministry of Finance Indexation Bulletins for 2025",
-        "federal": {
-            "brackets": [
-                57375.0,
-                114750.0,
-                177882.0,
-                253414.0
-            ],
-            "rates": [
-                0.15,
-                0.205,
-                0.26,
-                0.29,
-                0.33
-            ],
-            "bpa": 15705.0,
-            "bpa_rate": 0.15
-        },
-        "provincial": {
-            "brackets": [
-                52886.0,
-                105775.0,
-                150000.0,
-                220000.0
-            ],
-            "rates": [
-                0.0505,
-                0.0915,
-                0.1116,
-                0.1216,
-                0.1316
-            ],
-            "bpa": 12399.0,
-            "bpa_rate": 0.0505
-        }
-    }
+  "2025": {
+    "is_projected": false,
+    "cpp_basic_exemption": 3500.0,
+    "ympe": 71300.0,
+    "cpp1_rate": 0.0595,
+    "yampe": 81200.0,
+    "cpp2_rate": 0.0400,
+    "ei_rate": 0.0164,
+    "ei_max_premium": 1077.48,
+    "federal_bpa": 16129.0,
+    "ontario_bpa": 12747.0,
+    "federal_brackets": [
+      {"threshold": 55867, "rate": 0.15},
+      {"threshold": 111733, "rate": 0.205}
+    ],
+    "ontario_brackets": [
+      {"threshold": 51446, "rate": 0.0505},
+      {"threshold": 102894, "rate": 0.0915}
+    ]
+  },
+  "2026": {
+    "is_projected": false,
+    "cpp_basic_exemption": 3500.0,
+    "ympe": 74600.0,
+    "cpp1_rate": 0.0595,
+    "yampe": 85000.0,
+    "cpp2_rate": 0.0400,
+    "ei_rate": 0.0163,
+    "ei_max_premium": 1123.07,
+    "federal_bpa": 16452.0,
+    "ontario_bpa": 12989.0,
+    "federal_brackets": [
+      {"threshold": 57375, "rate": 0.15},
+      {"threshold": 114750, "rate": 0.205}
+    ],
+    "ontario_brackets": [
+      {"threshold": 52850, "rate": 0.0505},
+      {"threshold": 105701, "rate": 0.0915}
+    ]
+  },
+  "2027": {
+    "is_projected": true,
+    "default_indexation_rate": 0.026,
+    "cpp_basic_exemption": 3500.0,
+    "ympe": 76700.0,
+    "cpp1_rate": 0.0575,
+    "yampe": 87400.0,
+    "cpp2_rate": 0.0400,
+    "ei_rate": 0.0163,
+    "ei_max_premium": 1161.12,
+    "federal_bpa": 16880.0,
+    "ontario_bpa": 13325.0,
+    "federal_brackets": [
+      {"threshold": 58866, "rate": 0.15},
+      {"threshold": 117734, "rate": 0.205}
+    ],
+    "ontario_brackets": [
+      {"threshold": 54224, "rate": 0.0505},
+      {"threshold": 108451, "rate": 0.0915}
+    ]
+  }
 }
