@@ -4,12 +4,12 @@ from dataclasses import dataclass
 from typing import List, Dict, Any
 import pandas as pd
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(
-    page_title="Canadian Public Service & Healthcare Retirement Calculator",
+    page_title="Canadian Retirement Calculator (Ontario version)",
     page_icon="🍁",
     layout="wide",
-    initial_sidebar_state="expanded",
 )
 
 THRESHOLD_FILE = "tax_thresholds.json"
@@ -438,7 +438,27 @@ def main():
     thresholds_db = load_tax_thresholds()
     available_years = sorted(list(thresholds_db.keys()), reverse=True)
 
-    st.title("🍁 Canadian Public Service & Healthcare Retirement Calculator")
+    # st.title("🍁 Canadian Retirement Calculator (Ontario version)")
+    # 4 spaces (matches your old st.title line)
+    col1, col2 = st.columns([1, 11])
+
+    # 4 spaces
+    with col1:
+        # 8 spaces
+        try:
+            # 12 spaces
+            trillium_logo = Image.open("ON_LOGO_W-01-03.png")
+            st.image(trillium_logo, width=65)
+        # 8 spaces
+        except FileNotFoundError:
+            # 12 spaces
+            st.write("🌿")
+
+    # 4 spaces
+    with col2:
+        # 8 spaces
+        st.title("Canadian Retirement Calculator (Ontario version)")
+    
     st.caption(
         "Interactive Retirement Cash Flow, T4 Deduction, and Ontario Tax Simulation Tool. "
         "*Disclaimer: For educational and estimation purposes only; does not constitute formal financial, tax, or pension advice.*"
